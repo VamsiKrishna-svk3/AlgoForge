@@ -1,0 +1,27 @@
+@import "./AddProblem.css";
+
+.edit-container {
+    min-height: calc(100vh - 72px);
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.edit-card {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.edit-card h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #111827;
+    font-size: 34px;
+}

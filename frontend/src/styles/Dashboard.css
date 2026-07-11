@@ -1,0 +1,333 @@
+.dashboard {
+    min-height: 100vh;
+    background: #f7f8fa;
+    color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* MAIN CONTAINER */
+
+.dashboard-container{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:24px;
+    box-sizing:border-box;
+}
+
+/* ADD BUTTON */
+
+.add-button {
+
+    background: #ffa116;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+    transition: 0.2s;
+
+}
+
+
+.add-button:hover {
+
+    background: #ff8c00;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* CHART CARD */
+
+.chart-box {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-top: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+}
+
+
+
+.chart-box h2 {
+
+    margin-bottom: 20px;
+
+    font-size: 22px;
+
+    color:#262626;
+
+}
+
+
+
+/* PIE CHART */
+
+.chart {
+
+    width:100%;
+
+    height:300px;
+
+}
+
+
+
+
+
+/* PROBLEM LIST */
+.problem-list{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width:100%;
+}
+
+
+
+
+/* CARD COMMON STYLE */
+
+.card {
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    border:1px solid #e5e7eb;
+
+    transition:.25s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/* TEXT */
+
+h1,h2,h3 {
+
+    margin-top:0;
+
+}
+
+
+p {
+
+    color:#555;
+
+}
+
+
+
+
+/* LEETCODE STYLE TAG */
+
+.tag {
+
+    display:inline-block;
+
+    padding:5px 10px;
+
+    background:#eef2ff;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    margin-right:6px;
+
+}
+
+
+
+
+
+/* BUTTONS */
+
+button {
+
+    font-family:inherit;
+
+}
+
+
+
+.edit-button {
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+
+
+.delete-button {
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    margin-left:10px;
+
+}
+
+
+
+.edit-button:hover {
+
+    background:#1d4ed8;
+
+}
+
+
+
+.delete-button:hover {
+
+    background:#dc2626;
+
+}
+
+
+
+
+
+/* SEARCH AREA */
+
+.search-container {
+
+    background:white;
+
+    padding:20px;
+
+    margin-top:30px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    border:1px solid #e5e7eb;
+
+}
+
+
+
+.search-container input,
+
+.search-container select {
+
+
+    padding:12px 15px;
+
+    border-radius:8px;
+
+    border:1px solid #d1d5db;
+
+    font-size:15px;
+
+}
+
+
+
+.search-container input {
+
+    flex:1;
+
+    min-width:300px;
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+    .dashboard-container {
+
+        width:94%;
+
+    }
+
+
+
+    .search-container {
+
+        flex-direction:column;
+
+    }
+
+
+
+    .search-container input {
+
+        min-width:auto;
+
+    }
+
+
+}
