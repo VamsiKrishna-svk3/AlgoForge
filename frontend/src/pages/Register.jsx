@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "../styles/Register.css";
 
 function Register() {
@@ -11,10 +11,9 @@ function Register() {
   const [username, setUsername] = useState("");
 
   const [email, setEmail] = useState("");
-
   const [password, setPassword] = useState("");
-
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
 
@@ -25,7 +24,7 @@ function Register() {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://algoforge-6iym.onrender.com",
         {
           username,
           email,
@@ -97,15 +96,23 @@ function Register() {
             required
           />
 
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e)=>
-              setPassword(e.target.value)
-            }
-            required
-          />
+        <div className="password-container">
+     <input
+    type={showPassword ? "text" : "password"}
+    placeholder="Password"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    required
+    />
+
+  <button
+    type="button"
+    className="toggle-password"
+    onClick={() => setShowPassword(!showPassword)}
+  >
+    {showPassword ? <FaEyeSlash /> : <FaEye />}
+  </button>
+</div>
 
           <button
             className="auth-btn"
